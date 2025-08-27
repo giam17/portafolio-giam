@@ -1,6 +1,4 @@
-/* =========================
-   Estilos base
-   ========================= */
+
 * {
   box-sizing: border-box;
 }
@@ -10,28 +8,26 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;   /* nunca scroll lateral */
-  background: #1E1E1E;     /* fondo negro */
+  overflow-x: hidden;   
+  background: #1E1E1E;    
   font-family: system-ui, sans-serif;
   color: #fff;
 }
 
-/* =========================
-   Contenedor principal
-   ========================= */
+
 .viewport {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   width: 100%;
   min-height: 100vh;
-  padding: 20px 0;
+
 }
 
 .poster img {
   display: block;
-  width: 100vw;        /* la imagen ocupa el 80% del ancho de la ventana */
-  max-width: 1920px;  /* opcional: límite para que no crezca infinito */
+  width: 100vw;        
+  max-width: 1920px;  
   height: auto;
   margin: 0 auto;
   background: #111;
@@ -83,19 +79,19 @@ html, body {
 }
 
 .proyectos {
-  max-width: 100%;       /* usar todo el ancho de pantalla */
-  margin: 0;             /* sin márgenes */
-  padding: 0;            /* sin padding */
+  max-width: 100%;     
+  margin: 0;             
+  padding: 0;           
   text-align: center;
 }
 
 .imagen-proyecto img {
   display: block;
-  width: 100%;           /* ocupa todo el ancho disponible */
-  height: auto;          /* mantiene proporción */
+  width: 100%;         
+  height: auto;      
   margin: 0 auto;
-  border-radius: 0;      /* sin bordes redondeados si quieres que se vea tal cual */
-  box-shadow: none;      /* sin sombras para que sea “plano” */
+  border-radius: 0;     
+  box-shadow: none;      
   background: white;
 }
 .btn-container {
@@ -124,7 +120,7 @@ html, body {
   background: #3a6fd1;
 }
 
-/* Botón de siguiente proyecto (abajo derecha) */
+
 .btn-next {
   position: fixed;
   bottom: 20px;
@@ -137,7 +133,7 @@ html, body {
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between; /* coloca uno a la izq y otro a la der */
+  justify-content: space-between; 
   padding: 0 20px;
   z-index: 100;
 }
@@ -181,13 +177,13 @@ html, body {
   background: #fff;
 }
 .proyecto-secundario.sudoku .imagen-proyecto img {
-  max-width: 400px; /* 👉 cámbialo a 400px, 600px según te guste */
+  max-width: 400px; 
   width: 100%;
   height: auto;
 }
 
 .proyecto-secundario.envios .imagen-proyecto img {
-  max-width: 1200px; /* ajusta según quieras: 600, 800, etc. */
+  max-width: 1200px; 
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -198,5 +194,6 @@ html, body {
 }
 body {
   background: #ffffff;
-  color: #000; /* texto en negro para contraste */
+  color: #000; 
+
 }
