@@ -21,13 +21,12 @@ html, body {
   align-items: flex-start;
   width: 100%;
   min-height: 100vh;
-
 }
 
 .poster img {
   display: block;
   width: 100vw;        
-  max-width: 1920px;  
+  max-width: 1920px; 
   height: auto;
   margin: 0 auto;
   background: #111;
@@ -66,7 +65,7 @@ html, body {
 }
 
 .titulo-proyectos {
-  font-size: clamp(1.8rem, 3vw, 2.8rem); /* responsivo */
+  font-size: clamp(1.8rem, 3vw, 2.8rem); 
   font-weight: 800;
   text-transform: uppercase;
   color: #FF3700;
@@ -79,18 +78,18 @@ html, body {
 }
 
 .proyectos {
-  max-width: 100%;     
+  max-width: 100%;       
   margin: 0;             
-  padding: 0;           
+  padding: 0;            
   text-align: center;
 }
 
 .imagen-proyecto img {
   display: block;
-  width: 100%;         
-  height: auto;      
+  width: 100%;        
+  height: auto;         
   margin: 0 auto;
-  border-radius: 0;     
+  border-radius: 0;      
   box-shadow: none;      
   background: white;
 }
@@ -165,7 +164,7 @@ html, body {
 
 }
 
-/* Imagen del logotipo */
+
 .proyecto-secundario .imagen-proyecto img {
   width: 100%;
   max-width: 800px;
@@ -183,7 +182,7 @@ html, body {
 }
 
 .proyecto-secundario.envios .imagen-proyecto img {
-  max-width: 1200px; 
+  max-width: 1200px;
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -195,5 +194,4 @@ html, body {
 body {
   background: #ffffff;
   color: #000; 
-
 }
