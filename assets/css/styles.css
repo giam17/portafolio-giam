@@ -1,0 +1,202 @@
+/* =========================
+   Estilos base
+   ========================= */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;   /* nunca scroll lateral */
+  background: #1E1E1E;     /* fondo negro */
+  font-family: system-ui, sans-serif;
+  color: #fff;
+}
+
+/* =========================
+   Contenedor principal
+   ========================= */
+.viewport {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.poster img {
+  display: block;
+  width: 60vw;        /* la imagen ocupa el 80% del ancho de la ventana */
+  max-width: 1920px;  /* opcional: límite para que no crezca infinito */
+  height: auto;
+  margin: 0 auto;
+  background: #111;
+  box-shadow: 0 0 20px rgba(0,0,0,.7);
+  border-radius: 8px;
+}
+.btn-container {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+
+.btn-ir {
+  background: #2b2b2b;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.4);
+  transition: background .3s ease;
+}
+
+.btn-ir:hover {
+  background: #FF3700;
+}
+.header {
+  text-align: center;
+  padding: 40px 20px 20px;
+  background: #ffffff;
+}
+
+.titulo-proyectos {
+  font-size: clamp(1.8rem, 3vw, 2.8rem); /* responsivo */
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #FF3700;
+  letter-spacing: 2px;
+  margin: 0;
+
+  border-bottom: 3px solid #ffffff;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.proyectos {
+  max-width: 100%;       /* usar todo el ancho de pantalla */
+  margin: 0;             /* sin márgenes */
+  padding: 0;            /* sin padding */
+  text-align: center;
+}
+
+.imagen-proyecto img {
+  display: block;
+  width: 100%;           /* ocupa todo el ancho disponible */
+  height: auto;          /* mantiene proporción */
+  margin: 0 auto;
+  border-radius: 0;      /* sin bordes redondeados si quieres que se vea tal cual */
+  box-shadow: none;      /* sin sombras para que sea “plano” */
+  background: white;
+}
+.btn-container {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+
+.btn-ir {
+  background: #4f8cff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.4);
+  transition: background .3s ease;
+}
+
+.btn-ir:hover {
+  background: #3a6fd1;
+}
+
+/* Botón de siguiente proyecto (abajo derecha) */
+.btn-next {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 101;
+}
+.btn-bar {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* coloca uno a la izq y otro a la der */
+  padding: 0 20px;
+  z-index: 100;
+}
+
+.btn-ir {
+  background: #2f2f2f;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.4);
+  transition: background .3s ease;
+}
+
+.btn-ir:hover {
+  background: #FF3700;
+}
+.subtitulo-proyectos {
+  font-size: clamp(1.3rem, 2.5vw, 2rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FF3700;
+  margin: 40px 0 20px;
+  letter-spacing: 1px;
+  text-align: center;
+
+
+}
+
+/* Imagen del logotipo */
+.proyecto-secundario .imagen-proyecto img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 12px;
+
+  background: #fff;
+}
+.proyecto-secundario.sudoku .imagen-proyecto img {
+  max-width: 400px; /* 👉 cámbialo a 400px, 600px según te guste */
+  width: 100%;
+  height: auto;
+}
+
+.proyecto-secundario.envios .imagen-proyecto img {
+  max-width: 1200px; /* ajusta según quieras: 600, 800, etc. */
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,.4);
+}
+body {
+  background: #ffffff;
+  color: #000; /* texto en negro para contraste */
+}
